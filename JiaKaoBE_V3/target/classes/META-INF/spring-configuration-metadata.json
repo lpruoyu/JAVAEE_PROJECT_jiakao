@@ -1,0 +1,68 @@
+{
+  "groups": [
+    {
+      "name": "cors",
+      "type": "programmer.lp.jk.prop.CORSProperties",
+      "sourceType": "programmer.lp.jk.prop.CORSProperties"
+    },
+    {
+      "name": "swagger",
+      "type": "programmer.lp.jk.prop.SwaggerProperties",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cors.allow-credentials",
+      "type": "java.lang.Boolean",
+      "sourceType": "programmer.lp.jk.prop.CORSProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "cors.methods",
+      "type": "java.lang.String[]",
+      "sourceType": "programmer.lp.jk.prop.CORSProperties"
+    },
+    {
+      "name": "cors.origins",
+      "type": "java.lang.String[]",
+      "sourceType": "programmer.lp.jk.prop.CORSProperties"
+    },
+    {
+      "name": "cors.path-pattern",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.CORSProperties"
+    },
+    {
+      "name": "swagger.email",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    },
+    {
+      "name": "swagger.ignored-parameter-types",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    },
+    {
+      "name": "swagger.name",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    },
+    {
+      "name": "swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    },
+    {
+      "name": "swagger.url",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    },
+    {
+      "name": "swagger.version",
+      "type": "java.lang.String",
+      "sourceType": "programmer.lp.jk.prop.SwaggerProperties"
+    }
+  ],
+  "hints": []
+}

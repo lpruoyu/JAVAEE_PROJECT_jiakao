@@ -3,10 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="programmer.lp.jk.mapper.ExamPlaceCourseMapper">
-    <resultMap id="courseResp" type="RespExamPlaceCourse">
-
-    </resultMap>
-    <select id="selectPageResp" resultMap="courseResp">
+    <select id="selectPageResp" resultType="RespExamPlaceCourse">
         SELECT  c.id,
                 c.create_time,
                 c.name,
@@ -19,8 +16,7 @@
                 p.city_id,
                 p.province_id
         FROM exam_place_course c
-        LEFT JOIN exam_place p
-        ON c.place_id = p.id
+        LEFT JOIN exam_place p ON c.place_id = p.id
         ${ew.customSqlSegment}
     </select>
 </mapper>

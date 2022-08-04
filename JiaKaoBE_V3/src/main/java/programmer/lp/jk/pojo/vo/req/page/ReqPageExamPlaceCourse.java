@@ -3,11 +3,11 @@ package programmer.lp.jk.pojo.vo.req.page;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import programmer.lp.jk.validator.CourseType;
+import programmer.lp.jk.common.validator.CourseType;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class ReqPageExamPlaceCourse extends ReqKeywordPage {
+public class ReqPageExamPlaceCourse extends ReqPageKeyword {
     @ApiModelProperty("省份id")
     private Integer provinceId;
     @ApiModelProperty("城市id")

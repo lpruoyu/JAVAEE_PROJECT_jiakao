@@ -18,3 +18,8 @@ swagger:
   url: https://blog.csdn.net/weixin_44018671
   version: 1.0.0
   title: LP驾考
+fileupload:
+  base-path: D:/jk/
+  upload-path: uploads/
+  image-path: image/
+  video-path: video/

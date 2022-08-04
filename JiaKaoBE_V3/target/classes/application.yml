@@ -4,8 +4,15 @@ spring:
       - dev
       - properties
       - mybatisplus
-  jackson:
-    default-property-inclusion: non_null
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  resources:
+    static-locations:
+      - file:///${fileupload.base-path}
+#  mvc:
+#    static-path-pattern: /**
 logging:
   level:
-    programmer.lp.jk.mapper: debug
+    programmer.lp.jk: debug

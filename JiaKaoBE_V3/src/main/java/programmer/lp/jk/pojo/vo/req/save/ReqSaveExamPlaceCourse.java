@@ -2,7 +2,8 @@ package programmer.lp.jk.pojo.vo.req.save;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import programmer.lp.jk.validator.CourseType;
+import org.springframework.web.multipart.MultipartFile;
+import programmer.lp.jk.common.validator.CourseType;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -30,7 +31,10 @@ public class ReqSaveExamPlaceCourse {
     private String intro;
     @ApiModelProperty("视频")
     private String video;
-    @ApiModelProperty("封面")
+
+    @ApiModelProperty("新上传的封面数据")
+    private MultipartFile coverFile;
+    @ApiModelProperty("旧封面的路径")
     private String cover;
 }
 
